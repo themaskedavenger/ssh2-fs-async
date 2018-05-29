@@ -3,7 +3,7 @@
  */
 
 import * as fs from 'ssh2-fs';
-import * as ssh2Connect from 'ssh2-connect';
+import ssh2Connect from 'ssh2-connect';
 
 export function connect(options, callback) {
   return new Promise((resolve, reject) => {

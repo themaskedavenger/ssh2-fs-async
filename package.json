@@ -5,12 +5,9 @@
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watch 'npm run -s build' src -du",
+    "watch": "watch 'npm run -s lint' src -du",
     "lint": "echo '=> linting' && eslint src && echo '=> finished linting'",
-    "pretranspile": "npm run -s lint",
-    "transpile": "echo '=> transpiling' && mkdir -p bin && babel src --out-dir bin && echo '=> finished transpiling'",
-    "build": "echo '\n\n\n=> building' && npm run -s transpile && echo '=> finished build'",
-    "postbuild": "npm link"
+    "build": "echo '\n\n\n=> building' && npm run -s lint && echo '=> finished build'",
   },
   "author": {
     "name": "themaskedavenger",
@@ -30,7 +27,6 @@
     "url": "https://github.com/themaskedavenger/ssh2-fs-promise.git"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.12.0",
