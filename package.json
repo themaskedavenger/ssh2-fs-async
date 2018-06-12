@@ -1,13 +1,13 @@
 {
-  "name": "ssh2-fs-promise",
+  "name": "ssh2-fs-async",
   "version": "0.1.0",
-  "description": "Promise wrappers for ssh2-fs functions.",
+  "description": "Asynchronous promise wrappers for ssh2-fs functions.",
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watch 'npm run -s lint' src -du",
     "lint": "echo '=> linting' && eslint src && echo '=> finished linting'",
-    "build": "echo '\n\n\n=> building' && npm run -s lint && echo '=> finished build'",
+    "build": "echo '\n\n\n=> building' && npm run -s lint && echo '=> finished build'"
   },
   "author": {
     "name": "themaskedavenger",
@@ -21,10 +21,10 @@
     "ssh",
     "ssh2"
   ],
-  "homepage": "https://github.com/themaskedavenger/ssh2-fs-promise",
+  "homepage": "https://github.com/themaskedavenger/ssh2-fs-async",
   "repository": {
     "type": "git",
-    "url": "https://github.com/themaskedavenger/ssh2-fs-promise.git"
+    "url": "https://github.com/themaskedavenger/ssh2-fs-async.git"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
