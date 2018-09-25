@@ -2,7 +2,7 @@
  * @file Main access point for ssh2-fs-promise.
  */
 
-import * as fs from 'ssh2-fs';
+import * as sshfs from 'ssh2-fs';
 import ssh2Connect from 'ssh2-connect';
 
 export function connect(options, callback) {
